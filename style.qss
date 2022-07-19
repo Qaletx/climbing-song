@@ -1,0 +1,27 @@
+QLabel#back_ground{
+  background-image: url(./image/ground.jpg)
+}
+QLabel#back_ground2{
+  background:rgb(169,173,186,60%);
+}
+QPushButton{
+  background:transparent;
+}
+QTextBrowser,QPushButton{
+    background-color: rgba(255, 255, 255, 70%);
+    padding : 20px;
+    border-radius : 16px;
+}
+QLineEdit{
+    /*以下第一行代码是加透明度的*/
+    background-color: rgba(255, 255, 255, 70%);   /*别忘记加分号*/
+    border-radius : 7px;
+}
+在外可以直接写注释，在内需要用/**/,不然会影响
+注意写中文的话，需要open加上utf-8
+圆弧一定要与设计背景色一起用才生效,作用与顶级父窗口，四个角会是灰的
+一般也需要与padding一起用完成内容的显示区域不会越界
+padding可以为负，当padding过大时会拉大矩形，使得padding成立
+以下俩者不能一起用，后者会覆盖前者的效果
+background-color: rgba(255, 255, 255, 60%);
+background-color:white;
